@@ -1,12 +1,17 @@
 <template>
-  {{ msg }}
+    <div id="layout"></div>
 </template>
 <script setup lang="ts">
-// 定义string类型的msg变量 ts
-let msg: string = 'Hello World'
+import EditorMind from "./EditorMind";
+import {defineProps, ref, onMounted} from 'vue'
 
-
+onMounted(() => {
+    // 实例化编辑器
+    const editorMind = new EditorMind();
+})
 </script>
 <style scoped>
-
+#layout {
+    height: 800px;
+}
 </style>
