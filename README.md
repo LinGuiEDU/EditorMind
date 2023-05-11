@@ -27,3 +27,6 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### jsmind docs
+https://github.com/hizzgdev/jsmind/tree/master/docs/zh
